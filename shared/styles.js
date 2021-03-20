@@ -71,6 +71,11 @@ export const GlobalStyle = (
   />
 );
 
+export const HeaderSite = styled.header`
+  border-bottom: 2px solid var(--gris3);
+  padding: 1rem 0;
+`;
+
 export const ContenedorHeader = styled.div`
   max-width: 1200px;
   width: 95%inherit;
@@ -110,4 +115,88 @@ export const Boton = styled.a`
   &:last-of-type {
     margin-right: 0;
   }
+`;
+
+export const InputText = styled.input`
+  border: 1px solid var(--gris3);
+  padding: 1rem;
+  max-width: 300px;
+`;
+
+export const InputSubmit = styled.button`
+  height: 3rem;
+  width: 3rem;
+  display: block;
+  background-size: 4rem;
+  background-image: url("/static/img/buscar.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 1rem;
+  top: 1px;
+  background-color: white;
+  border: none;
+  outline: none;
+  text-indent: -9999px;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const Nav = styled.nav`
+  padding-left: 2rem;
+
+  a {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--gris2);
+    font-family: "PT Sans", sans-serif;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+`;
+
+export const Formulario = styled.form`
+  max-width: 60rem;
+  width: 95%;
+  margin: 5rem auto 0 auto;
+`;
+
+export const Campo = styled.div`
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+
+  label {
+    flex: 0 0 15rem;
+    font-size: 1.8rem;
+  }
+  input {
+    flex: 1;
+    padding: 1rem;
+  }
+`;
+
+export const BotonEnviar = styled.button`
+  background-color: var(--naranja);
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const HedingPage = styled.h1`
+  text-align: center;
+  margin-top: 3rem;
 `;

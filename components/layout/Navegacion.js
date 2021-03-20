@@ -1,13 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import { Nav } from "../../shared/styles";
 
 const Navegacion = () => {
   return (
-    <nav>
+    <Nav>
       <Link href="/">Inicio</Link>
-      <Link href="/">Populares</Link>
-      <Link href="/">Nuevo Producto</Link>
-    </nav>
+      <Link href="/populares">Populares</Link>
+      <Link href="/nuevo-producto">Nuevo Producto</Link>
+    </Nav>
   );
 };
 
