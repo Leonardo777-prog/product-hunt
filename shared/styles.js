@@ -67,6 +67,14 @@ export const GlobalStyle = (
       .bg-white {
         background-color: #fff;
       }
+      .flex-items-center {
+        display: flex;
+        align-items: center;
+      }
+
+      .mr-2 {
+        margin-right: 2rem;
+      }
     `}
   />
 );
@@ -199,4 +207,14 @@ export const BotonEnviar = styled.button`
 export const HedingPage = styled.h1`
   text-align: center;
   margin-top: 3rem;
+`;
+
+export const Alerta = styled.p`
+  background-color: ${(props) => (props.bgError ? "red" : "green")};
+  padding: 1rem 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 2rem 0;
 `;

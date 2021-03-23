@@ -3,40 +3,23 @@ import Link from "next/link";
 import Buscador from "../ui/Buscador";
 import Navegacion from "../layout/Navegacion";
 import { ContenedorHeader, Logo, Boton, HeaderSite } from "../../shared/styles";
-import { css } from "@emotion/react";
 
 const Header = () => {
   const user = false;
   return (
     <HeaderSite>
       <ContenedorHeader>
-        <div
-          css={css`
-            display: flex;
-            align-items: center;
-          `}
-        >
+        <div className="flex-items-center">
           <Link href="/">
             <Logo>p</Logo>
           </Link>
           <Buscador />
           <Navegacion />
         </div>
-        <div
-          css={css`
-            display: flex;
-            align-items: center;
-          `}
-        >
+        <div className="flex-items-center">
           {user ? (
             <>
-              <p
-                css={css`
-                  margin-right: 2rem;
-                `}
-              >
-                Hola Leo
-              </p>
+              <p className="mr-2">Hola Leo</p>
               <Boton bgColor={true}>Cerrar Sesion</Boton>
             </>
           ) : (
